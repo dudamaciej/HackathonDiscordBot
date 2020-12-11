@@ -5,6 +5,7 @@ module.exports = {
     args: true,
     guildOlny: true,
     usage: '<amount>',
+    cooldown: 3,
 
 
     run(msg, args) {

@@ -6,6 +6,7 @@ module.exports = {
     active: true,
     args: false,
     guildOnly: false,
+    cooldown: 120,
 
     run(msg) {
         const botAuthor = `<@256375196120907777>`;
