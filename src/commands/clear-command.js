@@ -6,6 +6,7 @@ module.exports = {
     guildOlny: true,
     usage: '<amount>',
     cooldown: 3,
+    role: 'ADMIN',
 
 
     run(msg, args) {

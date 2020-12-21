@@ -44,6 +44,13 @@ module.exports = (client) => {
         if (command.guildOnly && !guild) {
             return
         }
+        // Chceck if command Author has role/permissions to use that command
+        if (command.role) {
+
+            if (!msg.member.roles.cache.find(r => r.name === command.role)) {
+                return
+            }
+        }
         // Chceck if command needs aditional arguments
         if (command.args && !args.length) {
             let reply = `You didn't provide any arguments,${msg.author}`;
