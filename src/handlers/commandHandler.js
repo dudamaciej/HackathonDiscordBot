@@ -41,7 +41,7 @@ module.exports = (client) => {
 
         const command = client.commands.get(commandName);
         // Chceck if command can be only used in guild
-        if (command.guildOnly && !guild) {
+        if (command.guildOnly && !msg.guild) {
             return
         }
         // Chceck if command Author has role/permissions to use that command
